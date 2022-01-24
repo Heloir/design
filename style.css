@@ -67,6 +67,7 @@ nav h1{
 
 #started:hover{
     background-color: var(--roxoescuro);
+    padding: 15px;
 }
 
 
@@ -110,6 +111,10 @@ nav h1{
 
 .web-texto button:hover{
     background-color: var(--roxoescuro);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
 
 }
 
