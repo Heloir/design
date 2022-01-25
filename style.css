@@ -83,13 +83,14 @@ nav h1{
 .web-texto h1{
     font-family: 'Mochiy Pop P One', sans-serif;
     font-size: 50px;
-    margin-left: 40px;
+    margin-left: 8.5vh;
     height: 200px;
     color: var(--azulescuro);
+    padding: 0;
 }
 
 .web-texto p{
-    margin-left: 30px;
+    margin-left: 8.5vh;
     line-height: 20px;
 }
 
@@ -104,21 +105,21 @@ nav h1{
     padding-left: 40px;
     padding-right: 40px;
     margin-top: 50px;
-    margin-left: 60px;
+    margin-left: 8.5vh;
     transition: 0.5s;
 }
 
 
 .web-texto button:hover{
     background-color: var(--roxoescuro);
-    padding-top: 25px;
-    padding-bottom: 25px;
     padding-left: 45px;
     padding-right: 45px;
 
 }
 
 .web-img img{
+    padding: 0;
+    margin: 0;
     border-top-left-radius: 2000px;
     border-bottom-left-radius: 1000px;
 }
