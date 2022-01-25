@@ -34,6 +34,9 @@ nav, ul{
     flex-direction: row;
 }
 
+
+
+
 nav ul li{
     padding: 0;
     margin-right: 20px;
@@ -57,6 +60,14 @@ nav h1{
     padding-left: 100px;
 }
 
+
+@media (max-width:708px) {
+    nav h1{
+        padding-left: 55px;
+    }
+}
+ 
+
 #started{
     color:white;
     border-radius: 10px;
@@ -79,6 +90,23 @@ nav h1{
 
 
 
+#btn-mobile{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 30px;
+    padding-top: 0;
+    height: 70px;
+    font-size: 30px;
+    border: none;
+    color: var(--roxoescuro);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+
 
 .web-texto h1{
     font-family: 'Mochiy Pop P One', sans-serif;
@@ -89,12 +117,29 @@ nav h1{
     padding: 0;
 }
 
+@media (max-width:708px) {
+    .web-texto h1{
+        margin-top: 70px;
+        margin-bottom: 30px;
+        
+    }
+    
+}
+
 .web-texto p{
     margin-left: 8.5vh;
     line-height: 20px;
 }
 
-.web-texto button{
+@media (max-width: 1410px) {
+    .web-texto p{
+        margin-top: 20px;
+    }
+}
+
+
+
+.web-texto .submit{
     cursor: pointer;
     border-radius: 30px;
     color: white;
@@ -110,7 +155,7 @@ nav h1{
 }
 
 
-.web-texto button:hover{
+.web-texto .submit:hover{
     background-color: var(--roxoescuro);
     padding-left: 45px;
     padding-right: 45px;
@@ -123,3 +168,73 @@ nav h1{
     border-top-left-radius: 2000px;
     border-bottom-left-radius: 1000px;
 }
+
+
+
+
+
+@media (max-width:708px) {
+    .web-img img{
+        display: none;
+    }
+    
+}
+
+@media (max-width:708px) {
+    .menu{
+      position: absolute;
+      display: block;
+      width: 100%;
+      right: 0px;
+      transition: 0.6s;
+      z-index: 1000;
+      height: 0px;
+      background-color: var(--roxoescuro);
+      overflow-y: hidden;
+      overflow-y: hidden;
+    }
+
+    #btn-mobile{
+        display: flex;
+    }
+    
+    #nav.active .menu {
+
+    
+    cursor: pointer;
+    overflow-y: hidden;
+    flex-direction: column;
+    margin-top: 10px;
+    line-height: 50px;
+    height: calc(150vh - 70px);
+    text-align: left;
+    visibility: visible;
+    }
+
+    #nav.active a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom:  2px solid rgba(0, 0, 0, 0.137);
+        position: relative;
+        top: 30px;
+        font-weight: bold;
+        color: white;
+    }
+
+    #nav.active #started{
+      background-color: rgba(32, 14, 14, 0);
+    }
+    
+    #nav.active h1{
+        display: none;
+    }
+
+    #nav.active #btn-mobile{
+        position: absolute;
+        top: 10px;
+
+    }
+
+    
+}
+
